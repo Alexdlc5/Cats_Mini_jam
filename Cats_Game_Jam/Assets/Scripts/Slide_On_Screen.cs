@@ -13,13 +13,13 @@ public class Slide_On_Screen : MonoBehaviour
     }
     private void Update()
     {
-        if (RT.position.x < 920)
+        if (RT.position.x < 480)
         {
             RT.position += new Vector3(6, 0, 0);
         }
         else
         {
-            RT.position = new Vector3(920, RT.position.y, RT.position.z);
+            RT.position = new Vector3(480, RT.position.y, RT.position.z);
             Destroy(gameObject.GetComponent<Slide_On_Screen>());
         }
     }
