@@ -30,12 +30,12 @@ public class Movement : MonoBehaviour
         {
             if (Game_Manager.high_score < score)
             {
-                Game_Manager.high_score = score;
+                Game_Manager.high_score = (int)score;
             }
         }
-        score_display.text = "Score: " + score;
+        score_display.text = "Score: " + (int)score;
         highscore_display.text = "High: " + Game_Manager.high_score;
-        Lscore_display.text = "Score: " + score;
+        Lscore_display.text = "Score: " + (int)score;
         Lhighscore_display.text = "High: " + Game_Manager.high_score;
     }
 }

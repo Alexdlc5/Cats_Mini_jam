@@ -10,7 +10,7 @@ public class Attack : MonoBehaviour
     public GameObject[] attack_hbs;
     private GameObject closestHB = null;
     public float stamina = 1;
-    private float attack_drain = 0.001f;
+    public float attack_drain = 0.001f;
     public float time_drain = 0.0083f;
     public GameObject attack_hb;
     public Slider slider;
@@ -18,6 +18,8 @@ public class Attack : MonoBehaviour
     public float attack_duration = 0.5f;
     private float attack_time;
     public float angle_offset = 0;
+    public Animator animator;
+    public float fall_anim_time = .48f;
     // Update is called once per frame
     void Update()
     {
@@ -26,6 +28,7 @@ public class Attack : MonoBehaviour
             if (Input.GetMouseButtonDown(0) && closestHB == null)
             {
                 chooseHB();
+                animator.SetBool("Attacking", true);
                 closestHB.SetActive(true);
                 stamina -= attack_drain;
             }
@@ -36,12 +39,14 @@ public class Attack : MonoBehaviour
             else if (closestHB != null && closestHB.activeSelf)
             {
                 closestHB.SetActive(false);
+                animator.SetBool("Attacking", false);
                 closestHB = null;
                 attack_time = 0;
             }
             stamina -= time_drain * Time.deltaTime;
             if (stamina <= 0)
             {
+                animator.SetBool("Game Over", true);
                 Game_Manager.gameOver = true;
                 foreach (GameObject ui in normal_UI)
                 {
@@ -52,6 +57,17 @@ public class Attack : MonoBehaviour
             else
             {
                 slider.value = stamina;
+            }
+        }
+        else
+        {
+            if (fall_anim_time > 0)
+            {
+                fall_anim_time -= Time.deltaTime;
+            }
+            else
+            {
+                animator.SetBool("Fall Done", true);
             }
         }
     }
