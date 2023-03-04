@@ -11,6 +11,7 @@ public class Quit : MonoBehaviour
     }
     private void quit()
     {
+        GetComponent<AudioSource>().Play();
         Application.Quit();
     }
 }

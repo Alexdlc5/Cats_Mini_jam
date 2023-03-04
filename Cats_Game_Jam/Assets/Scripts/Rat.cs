@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Rat : MonoBehaviour
 {
+    public GameObject splat;
     private Attack player;
     public float speed = 1;
     public float alert_distance = 5;
@@ -48,6 +49,8 @@ public class Rat : MonoBehaviour
             {
                 player.stamina += kill_bonus;
             }
+            Instantiate(splat, transform.position, transform.rotation).SetActive(true);
+            collision.gameObject.transform.parent.GetComponentInParent<AudioSource>().Play();
             player.gameObject.GetComponentInParent<Movement>().score += score_bonus;
             Destroy(gameObject);
         }
