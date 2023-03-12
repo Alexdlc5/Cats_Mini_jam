@@ -1776,7 +1776,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Rat CATastrophy
+  m_text: Rat CATastrophe
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d9a4c8d3aa54bad4eb8fc6f99d764810, type: 2}
   m_sharedMaterial: {fileID: 2475610946750300532, guid: d9a4c8d3aa54bad4eb8fc6f99d764810, type: 2}
