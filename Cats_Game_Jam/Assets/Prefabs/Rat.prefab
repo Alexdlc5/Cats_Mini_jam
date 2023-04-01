@@ -4915,6 +4915,7 @@ MonoBehaviour:
   splat: {fileID: 25836072167027474}
   speed: 7
   alert_distance: 5
+  despawn_distance: 30
   kill_bonus: 0.035
   score_bonus: 500
   direction_change_time: 2

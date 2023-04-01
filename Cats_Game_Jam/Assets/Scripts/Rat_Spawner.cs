@@ -9,33 +9,28 @@ public class Rat_Spawner : MonoBehaviour
     private float timer = 0;
     public float max_spawn_distace = 5;
     public float min_spawn_distace = 3;
+    public float max_rats = 15;
+    public List<GameObject> rats;
     // Update is called once per frame
     void Update()
     {
-        if (timer >= spawn_rate)
+        if (rats.Count < max_rats)
         {
-            int random = Random.Range(0, 4);
-            if (random <= 1)
+            if (timer >= spawn_rate)
             {
-                Instantiate(rat, new Vector2(transform.position.x + Random.Range(min_spawn_distace, max_spawn_distace), transform.position.y + Random.Range(min_spawn_distace, max_spawn_distace)), transform.rotation);
+                int random = Random.Range(0, 4);
+                Vector2 location = new Vector2(transform.position.x + Random.Range(-max_spawn_distace, max_spawn_distace), transform.position.y + Random.Range(-max_spawn_distace, max_spawn_distace));
+                while (Vector2.Distance(transform.position, location) < min_spawn_distace) 
+                {
+                    location = new Vector2(transform.position.x + Random.Range(-max_spawn_distace, max_spawn_distace), transform.position.y + Random.Range(-max_spawn_distace, max_spawn_distace));
+                }
+                rats.Add(Instantiate(rat, location, transform.rotation));
+                timer = 0;
             }
-            if (random <= 2)
+            else
             {
-                Instantiate(rat, new Vector2(transform.position.x + Random.Range(-min_spawn_distace, -max_spawn_distace), transform.position.y + Random.Range(min_spawn_distace, max_spawn_distace)), transform.rotation);
+                timer += Time.deltaTime;
             }
-            if (random <= 3)
-            {
-                Instantiate(rat, new Vector2(transform.position.x + Random.Range(min_spawn_distace, max_spawn_distace), transform.position.y + Random.Range(-min_spawn_distace, -max_spawn_distace)), transform.rotation);
-            }
-            if (random <= 4)
-            {
-                Instantiate(rat, new Vector2(transform.position.x + Random.Range(-min_spawn_distace, -max_spawn_distace), transform.position.y + Random.Range(-min_spawn_distace, -max_spawn_distace)), transform.rotation);
-            }
-            timer = 0;
-        }
-        else
-        {
-            timer += Time.deltaTime;
-        }
+        }  
     }
 }

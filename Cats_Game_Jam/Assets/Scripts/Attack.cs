@@ -27,7 +27,7 @@ public class Attack : MonoBehaviour
         {
             if (Input.GetMouseButtonDown(0) && closestHB == null)
             {
-                chooseHB();
+                //chooseHB();
                 animator.SetBool("Attacking", true);
                 closestHB.SetActive(true);
                 stamina -= attack_drain;
@@ -71,22 +71,22 @@ public class Attack : MonoBehaviour
             }
         }
     }
-    private void chooseHB()
-    {
-        mouse_position = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        GameObject closest = null;
-        foreach (GameObject hb in attack_hbs)
-        {
-            if (closest == null)
-            {
-                closest = hb;
-            }
-            else if (Vector2.Distance(closest.transform.position, mouse_position) > Vector2.Distance(hb.transform.position, mouse_position))
-            {
-                closest = hb;
-            }
-        }
-        closestHB = closest;
-    }
+    //private void chooseHB()
+    //{
+    //    mouse_position = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+    //    GameObject closest = null;
+    //    foreach (GameObject hb in attack_hbs)
+    //    {
+    //        if (closest == null)
+    //        {
+    //            closest = hb;
+    //        }
+    //        else if (Vector2.Distance(closest.transform.position, mouse_position) > Vector2.Distance(hb.transform.position, mouse_position))
+    //        {
+    //            closest = hb;
+    //        }
+    //    }
+    //    closestHB = closest;
+    //}
 }
 

@@ -5,9 +5,10 @@ using UnityEngine;
 public class Rat : MonoBehaviour
 {
     public GameObject splat;
-    private Attack player;
+    private Movement player;
     public float speed = 1;
     public float alert_distance = 5;
+    public float despawn_distance = 5;
     public float kill_bonus = .1f;
     public float score_bonus = 300;
     public float direction_change_time = 2;
@@ -15,7 +16,7 @@ public class Rat : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player").GetComponent<Attack>();
+        player = GameObject.FindGameObjectWithTag("Player").GetComponentInParent<Movement>();
     }
 
     // Update is called once per frame
@@ -36,6 +37,11 @@ public class Rat : MonoBehaviour
             //run
             transform.position += transform.TransformDirection(Vector2.up * speed * Time.deltaTime);
         }
+        else if (Vector2.Distance(player.gameObject.transform.position, transform.position) > despawn_distance)
+        {
+            player.gameObject.GetComponent<Rat_Spawner>().rats.Remove(gameObject);
+            Destroy(gameObject);
+        }
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -49,6 +55,7 @@ public class Rat : MonoBehaviour
             {
                 player.stamina += kill_bonus;
             }
+            player.gameObject.GetComponent<Rat_Spawner>().rats.Remove(gameObject);
             Instantiate(splat, transform.position, transform.rotation).SetActive(true);
             collision.gameObject.transform.parent.GetComponentInParent<AudioSource>().Play();
             player.gameObject.GetComponentInParent<Movement>().score += score_bonus;
