@@ -57,6 +57,7 @@ public class Rat : MonoBehaviour
             }
             player.gameObject.GetComponent<Rat_Spawner>().rats.Remove(gameObject);
             Instantiate(splat, transform.position, transform.rotation).SetActive(true);
+            collision.gameObject.transform.parent.GetComponentInParent<AudioSource>().pitch = Random.Range(.8f, 1.2f);
             collision.gameObject.transform.parent.GetComponentInParent<AudioSource>().Play();
             player.gameObject.GetComponentInParent<Movement>().score += score_bonus;
             Destroy(gameObject);

@@ -18,7 +18,7 @@ public class Movement : MonoBehaviour
     public float stamina = 1;
     public float time_drain = 0.0083f;
     public Slider slider;
-    public GameObject lose_screen;
+    public GameObject[] lose_screen;
     public float attack_duration = 0.04f;
     public float attack_time = 0;
     public Animator animator;
@@ -64,7 +64,10 @@ public class Movement : MonoBehaviour
                 {
                     ui.SetActive(false);
                 }
-                lose_screen.SetActive(true);
+                foreach(GameObject l in lose_screen)
+                {
+                    l.SetActive(true);
+                }
             }
             else
             {
