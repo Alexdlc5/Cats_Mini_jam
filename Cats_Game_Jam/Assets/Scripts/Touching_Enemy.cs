@@ -7,6 +7,9 @@ public class Touching_Enemy : MonoBehaviour
     public Movement movement;
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        movement.hbEntered = true;
+        if (collision.gameObject.tag.Equals("Enemy"))
+        {
+            movement.hbEntered = true;
+        }
     }
 }

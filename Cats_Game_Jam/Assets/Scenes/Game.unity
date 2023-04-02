@@ -2440,7 +2440,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c5d27298f970f44ebe874cda86d6208, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rat: {fileID: 3317879835565109280, guid: bbea4cfb2abd7c2448ad09c5a56d6087, type: 3}
+  rat_types:
+  - {fileID: 3317879835565109280, guid: bbea4cfb2abd7c2448ad09c5a56d6087, type: 3}
+  - {fileID: 3317879835565109280, guid: b94fb70c3b13dc348928485fdc4e381a, type: 3}
   spawn_rate: 0.75
   max_spawn_distace: 10
   min_spawn_distace: 7.5
@@ -3090,6 +3092,18 @@ PrefabInstance:
     - target: {fileID: 6080167241041291062, guid: 1310755237e44134caa4e33ab69b4ea0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6080167241041291063, guid: 1310755237e44134caa4e33ab69b4ea0, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6080167241041291063, guid: 1310755237e44134caa4e33ab69b4ea0, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6080167241041291063, guid: 1310755237e44134caa4e33ab69b4ea0, type: 3}
+      propertyPath: m_Color.r
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1310755237e44134caa4e33ab69b4ea0, type: 3}

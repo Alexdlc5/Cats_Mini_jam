@@ -26,8 +26,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1394295284750736142}
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 2, y: 24.4, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 2.3, y: 28.1, z: 0}
+  m_LocalScale: {x: 1.2033, y: 1.2033, z: 1.2033}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6080167241041291062}
@@ -46,7 +46,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -11.984472, y: 1.7994442}
+  m_Offset: {x: -14.425122, y: 1.7994442}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -57,7 +57,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 16.99681, y: 40.446774}
+  m_Size: {x: 21.87811, y: 40.446774}
   m_EdgeRadius: 0
 --- !u!114 &6803982166744126683
 MonoBehaviour:
@@ -71,8 +71,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6ac9f645733f694a970d55319ac03d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  generatedTile: 0
-  nextTileOffset: {x: 0, y: 25}
+  nextTileOffset: {x: 0, y: 25.5}
 --- !u!1 &3032426230265910451
 GameObject:
   m_ObjectHideFlags: 0
@@ -99,8 +98,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3032426230265910451}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -1.1, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 2.7, y: -2.7, z: 0}
+  m_LocalScale: {x: 1.2033, y: 1.2033, z: 1.2033}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6080167241041291062}
@@ -119,7 +118,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -11.984472, y: 1.7994442}
+  m_Offset: {x: -11.096963, y: 1.7994442}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -130,7 +129,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 16.99681, y: 40.446774}
+  m_Size: {x: 18.77183, y: 40.446774}
   m_EdgeRadius: 0
 --- !u!114 &1995942361958568741
 MonoBehaviour:
@@ -144,8 +143,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6ac9f645733f694a970d55319ac03d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  generatedTile: 0
-  nextTileOffset: {x: -25, y: 0}
+  nextTileOffset: {x: -25.5, y: 0}
 --- !u!1 &5861238030215912104
 GameObject:
   m_ObjectHideFlags: 0
@@ -172,8 +170,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5861238030215912104}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 25, y: -1.1, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 27.7, y: -2.9, z: 0}
+  m_LocalScale: {x: 1.2033, y: 1.2033, z: 1.2033}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6080167241041291062}
@@ -192,7 +190,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -11.984472, y: 1.7994442}
+  m_Offset: {x: -13.593082, y: 1.7994442}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -203,7 +201,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 16.99681, y: 40.446774}
+  m_Size: {x: 20.214031, y: 40.446774}
   m_EdgeRadius: 0
 --- !u!114 &6559241269938988079
 MonoBehaviour:
@@ -217,8 +215,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6ac9f645733f694a970d55319ac03d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  generatedTile: 0
-  nextTileOffset: {x: 25, y: 0}
+  nextTileOffset: {x: 25.5, y: 0}
 --- !u!1 &6080167241041291060
 GameObject:
   m_ObjectHideFlags: 0
@@ -298,7 +295,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -5
   m_Sprite: {fileID: 21300000, guid: d4f5046ad58b42e4288293eaa730c922, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.84011215, g: 0.87469804, b: 0.8773585, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -322,7 +319,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   despawn_distance: 50
   TilePrefab: {fileID: 6080167241041291060}
-  TileParent: {fileID: 0}
 --- !u!1 &7511874014525990312
 GameObject:
   m_ObjectHideFlags: 0
@@ -349,8 +345,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7511874014525990312}
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 2.2, y: 1, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 2, y: 2.1, z: 0}
+  m_LocalScale: {x: 1.2033, y: 1.2033, z: 1.2033}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6080167241041291062}
@@ -369,7 +365,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -11.984472, y: 1.7994442}
+  m_Offset: {x: -10.098515, y: 1.7994442}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -380,7 +376,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 16.99681, y: 40.446774}
+  m_Size: {x: 20.768726, y: 40.446774}
   m_EdgeRadius: 0
 --- !u!114 &4548680287670540656
 MonoBehaviour:
@@ -394,5 +390,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6ac9f645733f694a970d55319ac03d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  generatedTile: 0
-  nextTileOffset: {x: 0, y: -25}
+  nextTileOffset: {x: 0, y: -25.5}

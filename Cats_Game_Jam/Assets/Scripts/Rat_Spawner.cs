@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Rat_Spawner : MonoBehaviour
 {
-    public GameObject rat;
+    public GameObject[] rat_types;
     public float spawn_rate = .2f;
     private float timer = 0;
     public float max_spawn_distace = 5;
@@ -24,7 +24,7 @@ public class Rat_Spawner : MonoBehaviour
                 {
                     location = new Vector2(transform.position.x + Random.Range(-max_spawn_distace, max_spawn_distace), transform.position.y + Random.Range(-max_spawn_distace, max_spawn_distace));
                 }
-                rats.Add(Instantiate(rat, location, transform.rotation));
+                rats.Add(Instantiate(rat_types[Random.Range(0,2)], location, transform.rotation));
                 timer = 0;
             }
             else
