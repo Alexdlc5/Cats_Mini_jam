@@ -10,4 +10,8 @@ public class Game_Manager
     public static int coins = 100;
     public static int gems = 5;
     public static int current_cat = 0;
+    //settings
+    public static float volume = 1;
+    public static bool mute = false;
+    public static bool normalControls = true;
 }
