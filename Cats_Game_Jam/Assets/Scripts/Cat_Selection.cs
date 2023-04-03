@@ -7,7 +7,6 @@ using TMPro;
 public class Cat_Selection : MonoBehaviour
 {
     public TextMeshProUGUI coins;
-    public TextMeshProUGUI gems;
     public TextMeshProUGUI nameDisplay;
     public TextMeshProUGUI descriptionDisplay;
     public TextMeshProUGUI priceDisplay;
@@ -15,6 +14,7 @@ public class Cat_Selection : MonoBehaviour
     public Button Left;
     public Button select;
     private int current_viewing;
+    public GameObject Unknown_Cat_Icon;
     public Image display;
     public GameObject selected;
     public Sprite[] cat_icons;
@@ -31,28 +31,38 @@ public class Cat_Selection : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        coins.text = "Coins:" + Game_Manager.coins;
-        gems.text = "Gems:" + Game_Manager.gems;
-        display.sprite = cat_icons[current_viewing];
-        nameDisplay.text = names[current_viewing];
-        priceDisplay.text = "Cost: " + prices[current_viewing] + " coins";
-        descriptionDisplay.text = "Description:\n" + descriptions[current_viewing];
-        if (current_viewing == Game_Manager.current_cat)
+        if (!Game_Manager.unlocked_cats.Contains(current_viewing))
         {
-            selected.SetActive(true);
+            priceDisplay.gameObject.SetActive(true);
+            Unknown_Cat_Icon.SetActive(true);
         }
         else
-        {
-            selected.SetActive(false);
+        { 
+            priceDisplay.gameObject.SetActive(false);
+            Unknown_Cat_Icon.SetActive(false);
         }
         if (Game_Manager.unlocked_cats.Contains(current_viewing))
         {
-            select.gameObject.transform.GetComponentInChildren<TextMeshProUGUI>().text ="Equip";
+            select.gameObject.transform.GetComponentInChildren<TextMeshProUGUI>().text = "Equip";
         }
         else
         {
             select.gameObject.transform.GetComponentInChildren<TextMeshProUGUI>().text = "Buy";
         }
+        if (current_viewing == Game_Manager.current_cat)
+        {
+            selected.SetActive(true);
+            select.gameObject.transform.GetComponentInChildren<TextMeshProUGUI>().text = "Equipped";
+        }
+        else
+        {
+            selected.SetActive(false);
+        }
+        coins.text = "Coins:" + Game_Manager.coins;
+        display.sprite = cat_icons[current_viewing];
+        nameDisplay.text = names[current_viewing];
+        priceDisplay.text = prices[current_viewing] + " coins";
+        descriptionDisplay.text = "Description:\n" + descriptions[current_viewing];
     }
     void select_cat()
     {
