@@ -153,7 +153,7 @@ RectTransform:
   m_GameObject: {fileID: 68535850}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 4.660339, y: 8.422696, z: 8.422708}
+  m_LocalScale: {x: 3.161884, y: 5.7145176, z: 5.714525}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1372924147}
@@ -162,7 +162,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -631, y: 163}
+  m_AnchoredPosition: {x: -462, y: 442}
   m_SizeDelta: {x: 129.9209, y: 25.943604}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!82 &68535853
@@ -538,6 +538,60 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 293479808}
   m_CullTransparentMesh: 1
+--- !u!1 &437793428
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 437793430}
+  - component: {fileID: 437793429}
+  m_Layer: 0
+  m_Name: BannerAd
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &437793429
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 437793428}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b239a9d6318d243b0beb3b6116a4a087, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  androidAdUnitId: 5230474
+  iosAdUnitId: 5230475
+  autoInitServices: 1
+  drawEditorPreview: 1
+  followComponentMovement: 1
+--- !u!224 &437793430
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 437793428}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 3.5726142}
+  m_LocalScale: {x: 0.70831996, y: 0.70831996, z: 0.70831996}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 97, y: 55.475708}
+  m_SizeDelta: {x: 1314.1628, y: 295.17}
+  m_Pivot: {x: -0.13512446, y: 0.18964112}
 --- !u!1 &807888129
 GameObject:
   m_ObjectHideFlags: 0
@@ -836,6 +890,7 @@ MonoBehaviour:
   _androidGameId: 5230474
   _iOSGameId: 5230475
   _testMode: 1
+  is_Video_Ad: 1
   rewardedAdsButton: {fileID: 1552087753}
 --- !u!4 &1046309141
 Transform:
@@ -882,7 +937,7 @@ RectTransform:
   m_GameObject: {fileID: 1057693342}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 4.9648867, y: 8.973109, z: 8.973121}
+  m_LocalScale: {x: 3.3395548, y: 6.0356236, z: 6.0356317}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1680318734}
@@ -891,7 +946,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -10, y: 402}
+  m_AnchoredPosition: {x: -31, y: 442}
   m_SizeDelta: {x: 124.8276, y: 25.058502}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!82 &1057693344
@@ -1403,6 +1458,55 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1265914071}
   m_CullTransparentMesh: 1
+--- !u!1 &1290560052
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1290560054}
+  - component: {fileID: 1290560053}
+  m_Layer: 0
+  m_Name: 'AdManager '
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1290560053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1290560052}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08b53014d59bb564bab714e6c12f2e03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _androidGameId: 5230474
+  _iOSGameId: 5230475
+  _testMode: 1
+  is_Video_Ad: 0
+  rewardedAdsButton: {fileID: 0}
+--- !u!4 &1290560054
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1290560052}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 704.44415, y: 214.18152, z: 3.629014}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1372924146
 GameObject:
   m_ObjectHideFlags: 0
@@ -1509,7 +1613,7 @@ RectTransform:
   m_GameObject: {fileID: 1427229891}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 4.8048077, y: 8.576589, z: 8.576599}
+  m_LocalScale: {x: 3.2318802, y: 5.768911, z: 5.7689176}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 293479809}
@@ -1518,7 +1622,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -6.9999847, y: 161}
+  m_AnchoredPosition: {x: 409, y: 442.4}
   m_SizeDelta: {x: 129.9209, y: 25.790314}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &1427229893
@@ -2277,7 +2381,7 @@ RectTransform:
   m_GameObject: {fileID: 1836030309}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 4.8785367, y: 8.817048, z: 8.8170595}
+  m_LocalScale: {x: 3.1967587, y: 5.777547, z: 5.7775545}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1197548342}
@@ -2286,7 +2390,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -636, y: 401}
+  m_AnchoredPosition: {x: -883.00006, y: 441}
   m_SizeDelta: {x: 125.131836, y: 25.350006}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!82 &1836030311
